@@ -50,6 +50,8 @@ GEM
     bindex (0.5.0)
     bootsnap (1.3.1)
       msgpack (~> 1.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.3)
     byebug (10.0.2)
     capybara (3.7.0)
@@ -202,6 +204,7 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    will_paginate (3.1.6)
     xpath (3.1.0)
       nokogiri (~> 1.8)
 
@@ -210,6 +213,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
+  bootstrap-will_paginate
   byebug
   capybara (>= 2.15)
   chromedriver-helper
@@ -218,6 +222,7 @@ DEPENDENCIES
   font-awesome-rails
   jbuilder (~> 2.5)
   jquery-datatables-rails
+  jquery-rails
   puma (~> 3.11)
   rails (~> 5.2.1)
   sass-rails (~> 5.0)
