@@ -1,16 +1,7 @@
-<% if @user.errors.any? %>
-	<div id="error_explanation">
-		<h2><%= pluralize(@user.errors.count, "error") %> found with your input:</h2>
-		<ul>
-			<% @user.errors.full_messages.each do |msg| %>
-				<li><%= msg %></li>
-			<% end %>	
-		</ul>
-	</div>
-<% end %>
 <%= form_for(@user) do |f| %>
 	<div class="container">    
 		<div class="col-md-10 col-md-offset-1">
+			<%= render 'shared/error_messages' %>
 		  <div class="panel panel-default">
 		    <div class="panel-heading">
 		      <div class="row">

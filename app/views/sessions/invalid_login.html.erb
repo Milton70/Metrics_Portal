@@ -1,0 +1,31 @@
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="text-center">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Oops:
+          <small>User Id [ <b><%= @current_user %></b> ] not found.</small>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <p>You don't appear to have an account set up on this application.</p>
+        	<br><p>Please action the following:</p>
+
+          <ul class="list-group">
+            <li class="list-group-item">Email the application owner and request access by clicking <%= mail_to @mail_user, 'here' %></li>
+            <li class="list-group-item">Forget that this ever happened, and go <a href="https://intranet.ebrd.com/home">our <b>Home</b> page</a> :)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
+</div>
