@@ -9,11 +9,17 @@
 	      </div>
 	    </div>
 	    <div class="panel-body">
-	    	<div class="col col-xs-6" data-turbolinks="false">
-	        <%= link_to "Get All Employees", new_rest_service_path, class: "btn btn-sm btn-primary" %>
+	    	<div class="col col-xs-3" data-turbolinks="false">
+	        <%= link_to "Get All Employees", rest_service_path(id: 'all'), class: "btn btn-sm btn-primary" %>
 	      </div>
-	      <div class="col col-xs-6" data-turbolinks="false">
-	        <%= link_to "Get One Employee", edit_rest_service_path(id: 166), class: "btn btn-sm btn-info" %>
+	      <div class="col col-xs-3" data-turbolinks="false">
+	        <%= link_to "Get One Employee", get_an_employee_path(id: 166), class: "btn btn-sm btn-info" %>
+	      </div>
+	      <div class="col col-xs-3" data-turbolinks="false">
+	        <%= link_to "Edit One Employee", edit_rest_service_path(id: 166, name: "mik", salary: "123", age: "18"), class: "btn btn-sm btn-warning" %>
+	      </div>
+	      <div class="col col-xs-3" data-turbolinks="false">
+	        <%= link_to "Delete One Employee", rest_service_path(id: 180), method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-danger" %>
 	      </div>
 	    </div>
 	    <div class="panel-footer">
