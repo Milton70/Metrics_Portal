@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Use rest-client for REST calls
+gem 'rest-client'
+
 # Add bootstrap for styling
 gem 'jquery-rails'
 gem 'bootstrap-will_paginate'
